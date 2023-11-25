@@ -1,20 +1,21 @@
 import { useContext } from "react";
 import "./Card.scss";
 import CarritoContext from "../contexts/CarritoContext";
+import Swal from "sweetalert2";
 
 const Card = ({ productos }) => {
 
   const { agregarCarritoContext } = useContext(CarritoContext);
 
   const handleClick = (producto) => {
-    /* Swal.fire({
-      title: 'agregaste un producto al carrito',
+    Swal.fire({
+      title: 'Se agrego tu producto al carrito',
       color: '#000',
       position:'top-end',
       toast:true,
       showConfirmButton: false,
       timer:3000
-    }) */
+    })
     agregarCarritoContext(producto);
   };
 

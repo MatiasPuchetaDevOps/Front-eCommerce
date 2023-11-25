@@ -5,13 +5,11 @@ import "./Inicio.scss";
 
 const Inicio = () => {
   const { productos } = useContext(ProductoContext);
-  console.log(productos)
   let novedades;
   let ultimasNovedades;
 
   const ultimosProductos = () => {
     ultimasNovedades = productos.slice(productos.length - 4, productos.length);
-    console.log(ultimasNovedades)
     novedades = ultimasNovedades.reverse()
   };
   if (productos) {
@@ -46,7 +44,7 @@ const Inicio = () => {
               <h3>JEANS</h3>
             </a>
           </div>
-          <h2>Novedades</h2>
+          <h2>Ultimas Novedades</h2>
           <div className="seccion__novedades">
            
             {novedades && <Card productos={novedades} />}
