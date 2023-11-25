@@ -1,28 +1,29 @@
 @import "../base/colors";
 
-.titulo__contacto{
+.titulo__contacto {
   text-align: center;
   font-size: 2.5em;
   margin: 1em;
 }
 
-
-.container__contacto{
+.container__contacto {
   display: flex;
   margin-bottom: 5em;
 
-  &__datos{
+  &__datos {
     width: 40%;
     padding: 0 5%;
   }
 
-  &__form{
+  &__form {
     width: 60%;
   }
-  li{
+
+  li {
     list-style: none;
     display: flex;
     margin: 1em 0;
+
     a {
       display: flex;
       color: #000;
@@ -30,9 +31,8 @@
       text-decoration: none;
       margin-left: .5em;
     }
- }
+  }
 }
-
 .form__contacto {
   width: 90%;
   margin: 1em;
@@ -40,8 +40,4 @@
   legend {
     font-size: 1.8em;
   }
-
-
 }
-
-

@@ -2,13 +2,12 @@ import React from "react";
 import "./contacto.scss";
 import { Button, TextField } from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import LocationOnIcon from '@mui/icons-material/LocationOn';
-import WatchLaterIcon from '@mui/icons-material/WatchLater';
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import WatchLaterIcon from "@mui/icons-material/WatchLater";
 const Contacto = () => {
-
   return (
     <>
       <h1 className="titulo__contacto">Contactate con nosotros</h1>
@@ -16,19 +15,35 @@ const Contacto = () => {
         <div className="container__contacto__datos">
           <h2>¿Tenes alguna duda o consulta ?</h2>
           <p>
-          Tu estilo habla por ti en la ciudad. Si necesitas ayuda para expresarte con nuestras prendas o tienes alguna pregunta sobre nuestros productos, estamos a un mensaje de distancia.
-          ¡Hablemos de tu estilo!
+            Tu estilo habla por ti en la ciudad. Si necesitas ayuda para
+            expresarte con nuestras prendas o tienes alguna pregunta sobre
+            nuestros productos, estamos a un mensaje de distancia. ¡Hablemos de
+            tu estilo!
           </p>
           <h2>Comunicate</h2>
           <ul>
-            <li><WhatsAppIcon/><a href="#"> 3543-123456</a></li> {/* Se agregaria el link a su whatsapp */}
-            <li><InstagramIcon/><a href="#"> Ropa_Streetware</a></li> {/* Se agregaria el link a su pagina */}
-            <li><FacebookIcon/><a href="#"> Ropa_Streetware</a></li> {/* Se agregaria el link a su pagina */}
+            <li>
+              <WhatsAppIcon />
+              <a href="#"> 3543-123456</a>
+            </li>
+            <li>
+              <InstagramIcon />
+              <a href="#"> Ropa_Streetware</a>
+            </li>
+            <li>
+              <FacebookIcon />
+              <a href="#"> Ropa_Streetware</a>
+            </li>
           </ul>
           <h2>Encontranos en nuestro local</h2>
           <ul>
-            <li><LocationOnIcon/> <a href="#">Calle falsa 1234, Cordoba</a></li>
-            <li><WatchLaterIcon/> <a href="#">lunes a viernes: 9hs - 13hs y 16hs a 21hs</a></li>
+            <li>
+              <LocationOnIcon /> <a href="#">Calle falsa 1234, Cordoba</a>
+            </li>
+            <li>
+              <WatchLaterIcon />
+              <a href="#">lunes a viernes: 9hs - 13hs y 16hs a 21hs</a>
+            </li>
           </ul>
         </div>
         <div className="container__contacto__form">
@@ -86,7 +101,11 @@ const Contacto = () => {
             </div>
             <br />
             <div>
-              <Button variant="contained" color="success" endIcon={<SendIcon />}>
+              <Button
+                variant="contained"
+                color="success"
+                endIcon={<SendIcon />}
+              >
                 Enviar
               </Button>
             </div>
