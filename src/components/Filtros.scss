@@ -1,0 +1,28 @@
+  .container__categorias {
+    display: flex;
+    flex-direction: column;
+    margin-right: 3em;
+
+    &-categoria {
+      width: 100%;
+      font-size: 1em;
+      margin-left: 4em;
+
+      ul {
+        padding: 0;
+        padding-left: .5em;
+      }
+      li {
+        display: flex;
+          list-style: none;
+          font-size: 1.2em;
+          margin: .2em 0;
+
+          label{
+            margin-left: .3em;
+          }
+        }
+
+
+    }
+  }

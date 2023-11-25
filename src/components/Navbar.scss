@@ -1,0 +1,58 @@
+@import "../base/colors";
+@import "../base/typography";
+
+/* ------------------------------------------------- */
+/* NAVBAR                                            */
+/* ------------------------------------------------- */
+
+.nav-bar {
+    background-color: $color-background;
+
+    &__nav-list {
+        /* .nav-bar__nav-list */
+        display: flex;
+        list-style-type: none;
+        justify-content: center;
+        align-items: center;
+        height: 3em;
+        background-color: $color-header;
+        border-top: 1px #fff double;
+        margin: 0;
+
+        @media (max-width: 768px) {
+            & {
+                flex-direction: column;
+                margin: 2em 0;
+                
+            }
+        }
+    }
+
+    &__nav-item {
+        text-align: center;
+        background-color: $color-header;
+
+        :hover {
+            color: $color-rosa;
+        }
+    }
+
+    &__nav-link {
+        margin: 0em 0;
+        display: block;
+        background-color: $color-header;
+        color: $color-search;
+        font-size: 1.6em;
+        padding: 0em 1.8em;
+        text-decoration: none;
+
+
+    }
+
+
+    @media (max-width: 768px) {
+        & {
+            display: none;
+        }
+    }
+}

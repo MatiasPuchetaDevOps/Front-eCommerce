@@ -1,0 +1,123 @@
+{
+  "productos": [
+    {
+      "nombre": "Outflit Grenn",
+      "foto": "../img/productos/conjunto-1.png",
+      "detalles": "Lorem ipsum dolor sit, amet consectetur adipisicing.",
+      "precio": 8000,
+      "stock": "10",
+      "marca": "Demian Store",
+      "categoria": "Conjuntos",
+      "id": 1,
+      "envio": false,
+      "cantidad": 2
+    },  
+    {
+      "nombre": "Outflit Grenn",
+      "foto": "../img/productos/conjunto-1.png",
+      "detalles": "Lorem ipsum dolor sit, amet consectetur adipisicing.",
+      "precio": 8000,
+      "stock": "10",
+      "marca": "Demian Store",
+      "categoria": "Conjuntos",
+      "id": 1,
+      "envio": false,
+      "cantidad": 2
+    },
+    {
+      "nombre": "Outflit Grenn",
+      "foto": "../img/productos/conjunto-1.png",
+      "detalles": "Lorem ipsum dolor sit, amet consectetur adipisicing.",
+      "precio": 8000,
+      "stock": "10",
+      "marca": "Demian Store",
+      "categoria": "Conjuntos",
+      "id": 1,
+      "envio": false,
+      "cantidad": 2
+    },  
+    {
+      "nombre": "Outflit Grenn",
+      "foto": "../img/productos/conjunto-1.png",
+      "detalles": "Lorem ipsum dolor sit, amet consectetur adipisicing.",
+      "precio": 8000,
+      "stock": "10",
+      "marca": "Demian Store",
+      "categoria": "Conjuntos",
+      "id": 1,
+      "envio": false,
+      "cantidad": 2
+    },
+    {
+      "nombre": "Outflit Grenn",
+      "foto": "../img/productos/conjunto-1.png",
+      "detalles": "Lorem ipsum dolor sit, amet consectetur adipisicing.",
+      "precio": 8000,
+      "stock": "10",
+      "marca": "Demian Store",
+      "categoria": "Conjuntos",
+      "id": 1,
+      "envio": false,
+      "cantidad": 2
+    },  
+    {
+      "nombre": "Outflit Grenn",
+      "foto": "../img/productos/conjunto-1.png",
+      "detalles": "Lorem ipsum dolor sit, amet consectetur adipisicing.",
+      "precio": 8000,
+      "stock": "10",
+      "marca": "Demian Store",
+      "categoria": "Conjuntos",
+      "id": 1,
+      "envio": false,
+      "cantidad": 2
+    },
+    {
+      "nombre": "Outflit Grenn",
+      "foto": "../img/productos/conjunto-1.png",
+      "detalles": "Lorem ipsum dolor sit, amet consectetur adipisicing.",
+      "precio": 8000,
+      "stock": "10",
+      "marca": "Demian Store",
+      "categoria": "Conjuntos",
+      "id": 1,
+      "envio": false,
+      "cantidad": 2
+    },  
+    {
+      "nombre": "Outflit Grenn",
+      "foto": "../img/productos/conjunto-1.png",
+      "detalles": "Lorem ipsum dolor sit, amet consectetur adipisicing.",
+      "precio": 8000,
+      "stock": "10",
+      "marca": "Demian Store",
+      "categoria": "Conjuntos",
+      "id": 1,
+      "envio": false,
+      "cantidad": 2
+    },
+    {
+      "nombre": "Outflit Grenn",
+      "foto": "../img/productos/conjunto-1.png",
+      "detalles": "Lorem ipsum dolor sit, amet consectetur adipisicing.",
+      "precio": 8000,
+      "stock": "10",
+      "marca": "Demian Store",
+      "categoria": "Conjuntos",
+      "id": 1,
+      "envio": false,
+      "cantidad": 2
+    },  
+    {
+      "nombre": "Outflit Grenn",
+      "foto": "../img/productos/conjunto-1.png",
+      "detalles": "Lorem ipsum dolor sit, amet consectetur adipisicing.",
+      "precio": 8000,
+      "stock": "10",
+      "marca": "Demian Store",
+      "categoria": "Conjuntos",
+      "id": 1,
+      "envio": false,
+      "cantidad": 2
+}]
+}

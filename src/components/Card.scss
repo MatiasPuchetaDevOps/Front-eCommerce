@@ -1,0 +1,109 @@
+@import "../base/colors";
+@import "../base/typography";
+
+.card {
+    outline: none;
+    width: 24vw;
+    max-width: 25vw;
+    height: 79vh;
+    text-decoration: none;
+    overflow: hidden;
+    background-color: #fff;
+    background-image: #fff;
+    border-radius: 6px;
+    transition: all .25s;
+    /* No puede ser all */
+
+    &:hover,
+    /* .card:hover */
+    &:focus {
+        box-shadow: 0 7px 8px $color-rosa, 0 3px 3px $color-rosa;
+    }
+
+
+    &__image-container {
+        height: 65vh;
+        background-color: #fcf9f9;
+        overflow: hidden;
+
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: .2s;
+    }
+
+    &:hover &__image,
+    &:focus &__image {
+        transform: scale(1.08);
+        transform-origin: center;
+    }
+
+    &__content {
+        padding: 0.5em;
+        padding-top: 1em;
+        display: flex;
+        justify-content: space-between;
+        background-color: #fff;
+        align-items: center;
+        height: 6vh;
+
+
+    }
+
+    &_heading {
+        margin: 0;
+        font-size: 1.6em;
+        color: #000000;
+    }
+    &_precio{
+        font-size: 1.5em;
+    }
+
+    &__btn{
+        width: 100%;
+        height: 2.5em;
+        background-color: #000000;
+        color: #fff;
+        font-family: 'Kalam',sans-serif;
+        font-weight: 800;
+        font-size: 1em;
+        cursor: pointer;
+    }
+
+    @media (min-width: 1024px) {
+        & {
+            /* .card */
+            min-width: 20px;
+        }
+    }
+
+    @media (min-width: 426px) and (max-width: 768px) {
+        & {
+            min-width: 400px;
+            max-width: 500px;
+            height: 300px;
+        }
+
+        &__article {
+            /* .card__article */
+            display: flex;
+        }
+
+        & &__image-container {
+            /* .card .card_image-container */
+            width: 100%;
+            clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+        }
+
+        &:hover &__image-container,
+        /* .card:hover .card__image-container  */
+        &:focus &__image-container {
+            /* .card:focus .card__image-container */
+            width: 100%;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        }
+    }
+}

@@ -1,0 +1,87 @@
+.sectionInicio {
+    color: #000;
+
+    .headerImg {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    h2 {
+        text-align: center;
+        font-family: 'Kalam', cursive;
+        font-weight: 700;
+        font-size: 3.5em;
+    }
+
+    .seccion__opciones {
+        display: flex;
+        justify-content: space-around;
+        padding: 2em;
+
+        &-categoria {
+            width: 30%;
+            position: relative;
+            cursor: pointer;
+            overflow: hidden;
+            font-family: 'Kalam', cursive;
+            border-radius: 1em;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: .3s;
+
+
+            }
+
+            h3 {
+                position: absolute;
+                color: #fff;
+                font-weight: 400;
+                font-size: 3em;
+                bottom: 0;
+                left: 10%;
+                margin: 0;
+            }
+
+            :hover {
+                scale: 1.1;
+            }
+        }
+    }
+
+    .seccion__novedades {
+        display: flex;
+        justify-content: space-around;
+        margin: 5em 0;
+
+        .card {
+            position: relative;
+            height: 70vh;
+
+            &__image-container {
+                height: 70vh;
+                background-color: #464646;
+                overflow: hidden;
+            }
+
+            h2 {
+                position: absolute;
+                bottom: 0;
+                left: 10%;
+                color: #fff;
+                font-size: 2em;
+                text-shadow: 0px 1px 3px #000;
+            }
+
+            &__description {
+                display: none;
+            }
+
+            button {
+                display: none;
+            }
+        }
+    }
+}

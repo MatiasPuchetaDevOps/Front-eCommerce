@@ -1,0 +1,40 @@
+@import "../src/base/colors";
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap');
+html{
+   background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'kalam', serif;
+}
+main{
+    font-family: 'kalam', serif;
+}
+.section-cards {
+    background-color: $color-background;
+    padding: 1em;
+    .section-cards__header{
+        h1{
+            text-align: center;
+        }
+            
+    }
+   &__header{
+    margin: 1em 2em;
+
+    h1{
+        font-size: 2em;
+        
+    }
+   }
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
