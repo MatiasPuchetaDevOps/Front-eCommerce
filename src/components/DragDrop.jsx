@@ -1,8 +1,9 @@
 import React from "react";
 import "./DragDrop.scss";
 import { post } from "../utils/http";
+import BackupIcon from '@mui/icons-material/Backup';;
 
-export const DragDrop = ({ setFoto, srcImagen, setSrcImagen }) => {
+export const DragDrop = ({ setFoto, srcImagen, setSrcImagen}) => {
   //! Cancelando comportamiento por defelto del navegador
 
   const arrayEventos = ["dragenter", "gragleave", "dragover", "drop"];
@@ -43,6 +44,7 @@ export const DragDrop = ({ setFoto, srcImagen, setSrcImagen }) => {
       formData.append("foto", file);
 
       const url = import.meta.env.VITE_URL_UPLOAD;
+      console.log(url)
       const imagenUp = await post(url, formData);
       
       setFoto(imagenUp);
@@ -51,12 +53,11 @@ export const DragDrop = ({ setFoto, srcImagen, setSrcImagen }) => {
     }
   };
 
+
   return (
+    <>
+      <h5>Subir imagen del producto</h5>
     <div className="drag-area" onDrop={handleDrop}>
-      <p>
-        Subir imagen al servicio con <b>File Dialog</b> o con
-        <b>Drag and Drop</b> dentro del area ounteada
-      </p>
       <input
         type="file"
         id="lbl-foto"
@@ -64,12 +65,14 @@ export const DragDrop = ({ setFoto, srcImagen, setSrcImagen }) => {
         onChange={handleChange}
       />
       <label className="drag-area-button" htmlFor="lbl-foto">
-        File Dialog
+        <BackupIcon/>
       </label>
 
       <div className="drag-area-image">
         <img src={srcImagen} alt="" />
       </div>
     </div>
+    </>
+
   );
 };

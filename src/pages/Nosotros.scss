@@ -1,0 +1,24 @@
+.container__nosotros {
+  h1 {
+    text-align: center;
+    font-size: 3em;
+    font-weight: 700;
+    margin-top: 1em;
+  }
+
+  &-descripcion {
+    h2{
+      font-size: 1.8em;
+    }
+    font-size: 1.2em;
+    width: 80%;
+    margin: 2em auto;
+    padding: 1em 0;
+  }
+}
+
+.right {
+  text-align: right;
+  background-image: url(../../public/img/backgroud/textura-pared-ladrillo.jpg);
+
+}

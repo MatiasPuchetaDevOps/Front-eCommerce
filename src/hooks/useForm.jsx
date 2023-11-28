@@ -11,7 +11,6 @@ export const useForm = (estadoInicial = {}) => {
         })
     }
 
-
     return [values, setValues, handleInputChange]
 
 }

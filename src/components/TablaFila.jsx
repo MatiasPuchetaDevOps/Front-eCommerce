@@ -1,45 +1,56 @@
-import { useContext } from 'react'
-import './TablaFila.scss'
-import ProductoContext from '../contexts/ProductoContext'
+import { useContext } from "react";
+import "./TablaFila.scss";
+import ProductoContext from "../contexts/ProductoContext";
 
 const TablaFila = ({ producto, setProductoAEditar }) => {
-  const { eliminarProductoContext } = useContext(ProductoContext)
+  const { eliminarProductoContext } = useContext(ProductoContext);
 
   const handleDelete = (id) => {
-    console.warn(id)
+    console.warn(id);
 
     let isDelete = window.confirm(`
       ¿Estás seguro de eliminar el producto con el 'id': ${id}
-    `)
+    `);
 
-    if ( isDelete ) {
-      eliminarProductoContext(id)
+    if (isDelete) {
+      eliminarProductoContext(id);
     } else {
-      return // break
+      return; // break
     }
-
-  }
+  };
   const handleUpdate = (producto) => {
-    setProductoAEditar(producto)
-  }
+    setProductoAEditar(producto);
+  };
 
   return (
     <tr>
-          <td>{producto.nombre}</td>
-          <td>{producto.precio}</td>
-          <td>{producto.stock}</td>
-          <td>{producto.categoria}</td>
-          <td>{producto.detalles}</td>
-          <td>
-            <img className="img-row" src={producto.foto} alt={producto.nombre} />
-          </td>
-          <td>{producto.envio ? 'Si' : 'No'}</td>
-          <td>
-            <button onClick={() => handleUpdate(producto)}>Editar</button>
-            <button onClick={() => handleDelete(producto.id)}>Eliminar</button>
-          </td>
+      <td>{producto.nombre}</td>
+      <td>$ {producto.precio}</td>
+      <td>{producto.stock}</td>
+      <td>{producto.categoria}</td>
+      <td>{producto.detalles}</td>
+      <td>
+        <img className="img-row" src={producto.foto} alt={producto.nombre} />
+      </td>
+      <td>{producto.envio ? "Si" : "No"}</td>
+      <td>
+        <div className="btn-form-alta">
+          <button
+            className="btn btn-outline-dark"
+            onClick={() => handleUpdate(producto)}
+          >
+            Editar
+          </button>
+          <button
+            className="btn btn-outline-dark"
+            onClick={() => handleDelete(producto.id)}
+          >
+            Eliminar
+          </button>
+        </div>
+      </td>
     </tr>
-  )
-}
+  );
+};
 
-export default TablaFila
+export default TablaFila;

@@ -9,15 +9,16 @@ const Card = ({ productos }) => {
 
   const handleClick = (producto) => {
     Swal.fire({
-      title: 'Se agrego tu producto al carrito',
-      color: '#000',
-      position:'top-end',
-      toast:true,
+      position: "top-end",
+      icon: "success",
+      width: "30em",
+      title: "Producto agregado al carrito",
       showConfirmButton: false,
-      timer:3000
-    })
-    agregarCarritoContext(producto);
-  };
+      timer: 1100
+    });
+    agregarCarritoContext(producto)
+  }
+  
 
   return (
     <>
@@ -36,9 +37,7 @@ const Card = ({ productos }) => {
                 <h2 className="card_heading">{producto.nombre}</h2>
                 <p className="card_precio">$ {producto.precio}</p>
               </div>
-              <button className="card__btn" onClick={() => handleClick}>
-                Agregar
-              </button>
+              <button className="card__btn" onClick={() => handleClick(producto)}>Agregar</button>
             </article>
           </div>
         </div>

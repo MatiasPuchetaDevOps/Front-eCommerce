@@ -28,14 +28,38 @@ export const useLocalStorage = (clave, valorInicial = []) => {
     }
 
     const eliminarValor = (id) => {
-        console.log(id)
+    
+        try {
+            /*      clon del carrito        carrito */
+            const nuevoValorAlmacenado = [...valorAlmacenado]
+            const indice = nuevoValorAlmacenado.findIndex(item => item.id === id)
+            nuevoValorAlmacenado.splice(indice, 1)
+            setValorAlmacenado(nuevoValorAlmacenado) // Eliminé el producto del estado de la aplicación
+            window.localStorage.setItem(clave, JSON.stringify(nuevoValorAlmacenado))
+        } catch (error) {
+            console.error(`Error al eliminar ${clave} del localStorage: ${error}`)
+        }
+    }
+
+    const actualizarValores = (carrito) => {
+        try {
+            window.localStorage.setItem(clave, JSON.stringify(carrito))
+        } catch (error) {
+            console.error(`Error al actualizar el carrito ${clave} del localStorage: ${error}`)
+        }
     }
 
     const limpiarStorage = () => {
-
+        try {
+            window.localStorage.clear()
+            window.localStorage.setItem(clave, JSON.stringify(valorInicial))
+            setValorAlmacenado(valorInicial)
+        } catch (error) {
+            console.error(`Error al limpiar el Storage ${clave} del localStorage: ${error}`)
+        }
     }
 
 
 
-    return [ guardarValor, eliminarValor, limpiarStorage,  valorAlmacenado ]
+    return [ guardarValor, eliminarValor, limpiarStorage, actualizarValores,  valorAlmacenado ]
 }

@@ -9,7 +9,7 @@ const Header = () => {
 
       <div className="search-bar">
         <div className="search-bar__logo-container">
-          <img src="../img/header/logo.jpeg" alt="Logo Demian" />
+          <a href="./Inicio"><img src="../img/header/logo.jpeg" alt="Logo Demian" /></a>
         </div>
         <form action="#" className="search-bar__form-container">
           <label htmlFor="busqueda" className="search-bar__form-label"></label>

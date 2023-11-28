@@ -28,18 +28,18 @@ const Inicio = () => {
         <main>
           <h2>Dale estilo a tu vida</h2>
           <div className="seccion__opciones">
-            <a className="seccion__opciones-categoria">
+            <a className="seccion__opciones-categoria" href="./Productos">
               <img
                 src="../img/main/camiseta-genial-maqueta-percha_23-2150486768.jpg"
                 alt="REMERAS"
               />
               <h3>REMERAS</h3>
             </a>
-            <a className="seccion__opciones-categoria">
+            <a className="seccion__opciones-categoria" href="./Productos">
               <img src="../img/main/hombre-vestido-sudadera.jpg" alt="BUZOS" />
               <h3>BUZOS</h3>
             </a>
-            <a className="seccion__opciones-categoria">
+            <a className="seccion__opciones-categoria" href="./Productos">
               <img src="../img/main/photo16946391431.jpg" alt="JEANS" />
               <h3>JEANS</h3>
             </a>

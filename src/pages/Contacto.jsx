@@ -1,7 +1,6 @@
 import React from "react";
 import "./contacto.scss";
-import { Button, TextField } from "@mui/material";
-import SendIcon from "@mui/icons-material/Send";
+import { TextField } from "@mui/material";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
@@ -13,14 +12,14 @@ const Contacto = () => {
       <h1 className="titulo__contacto">Contactate con nosotros</h1>
       <main className="container__contacto">
         <div className="container__contacto__datos">
-          <h2>¿Tenes alguna duda o consulta ?</h2>
+          <h2 className="mb-4">¿Tenes alguna duda o consulta ?</h2>
           <p>
             Tu estilo habla por ti en la ciudad. Si necesitas ayuda para
             expresarte con nuestras prendas o tienes alguna pregunta sobre
             nuestros productos, estamos a un mensaje de distancia. ¡Hablemos de
             tu estilo!
           </p>
-          <h2>Comunicate</h2>
+          <h2 className="mt-5">Comunicate</h2>
           <ul>
             <li>
               <WhatsAppIcon />
@@ -35,7 +34,7 @@ const Contacto = () => {
               <a href="#"> Ropa_Streetware</a>
             </li>
           </ul>
-          <h2>Encontranos en nuestro local</h2>
+          <h2 className="mt-5">Encontranos en nuestro local</h2>
           <ul>
             <li>
               <LocationOnIcon /> <a href="#">Calle falsa 1234, Cordoba</a>
@@ -101,13 +100,9 @@ const Contacto = () => {
             </div>
             <br />
             <div>
-              <Button
-                variant="contained"
-                color="success"
-                endIcon={<SendIcon />}
-              >
-                Enviar
-              </Button>
+              <button type="submit" className="btn btn-success me-2">
+              Enviar
+            </button>
             </div>
           </form>
         </div>

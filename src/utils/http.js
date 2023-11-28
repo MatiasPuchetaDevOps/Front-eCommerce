@@ -20,6 +20,8 @@ export const get = async (url) => {
 
 /* CRUD => C:CREAT => POST */
 export const post = async (url, dato) => {
+  console.log(url)
+  console.log(dato)
   let config = {};
   try {
     if (dato instanceof FormData) {
@@ -31,6 +33,7 @@ export const post = async (url, dato) => {
     } else {
        config = {
         method: "POST",
+        mode: 'cors',
         headers: { "content-type": "application/json" },
         body: JSON.stringify(dato),
       };
@@ -41,6 +44,7 @@ export const post = async (url, dato) => {
         headers: { "content-type": "application/json" },
         body: dato instanceof FormData ? dato : JSON.stringify(dato),
       }; */
+      console.log(config)
     const respuesta = await fetch(url, config);
     if (!respuesta.ok) {
       throw new Error(
