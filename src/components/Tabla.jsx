@@ -1,10 +1,10 @@
 import { useContext } from 'react'
 import './Tabla.scss'
 import TablaFila from './TablaFila'
-import ProductoContext from '../contexts/ProductoContext'
+import ProductContext from '../contexts/ProductContext'
 
 const Tabla = ( { setProductoAEditar }) => {
-  const { productos } = useContext(ProductoContext)
+  const { products } = useContext(ProductContext)
 
   return (
     <table className='tabla-alta'>
@@ -21,7 +21,7 @@ const Tabla = ( { setProductoAEditar }) => {
         </tr>
       </thead>
       <tbody>
-        {productos && productos.map((producto, idx) => (
+        {products && products.map((producto, idx) => (
           <TablaFila key={idx} producto={producto} setProductoAEditar={setProductoAEditar}/>
         ))}
       </tbody>

@@ -3,7 +3,7 @@ import "./Card.scss";
 import CarritoContext from "../contexts/CarritoContext";
 import Swal from "sweetalert2";
 
-const Card = ({ productos }) => {
+const Card = ({ products }) => {
 
   const { agregarCarritoContext } = useContext(CarritoContext);
 
@@ -22,7 +22,7 @@ const Card = ({ productos }) => {
 
   return (
     <>
-      {productos.map((producto, idx) => (
+      {products.map((producto, idx) => (
         <div key={idx} className="section-cards" href="/producto">
           <div className="card">
             <article className="card__article">

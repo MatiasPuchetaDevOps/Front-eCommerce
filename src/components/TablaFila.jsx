@@ -1,9 +1,9 @@
 import { useContext } from "react";
 import "./TablaFila.scss";
-import ProductoContext from "../contexts/ProductoContext";
+import ProductContext from "../contexts/ProductContext";
 
 const TablaFila = ({ producto, setProductoAEditar }) => {
-  const { eliminarProductoContext } = useContext(ProductoContext);
+  const { eliminarProductoContext } = useContext(ProductContext);
 
   const handleDelete = (id) => {
     console.warn(id);

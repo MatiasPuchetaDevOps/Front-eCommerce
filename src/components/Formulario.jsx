@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from "react";
-import ProductoContext from "../contexts/ProductoContext";
+import ProductContext from "../contexts/ProductContext";
 import { useForm } from "../hooks/useForm";
 import { DragDrop } from "./DragDrop";
 import "./Formulario.scss";
@@ -19,7 +19,7 @@ const formInicial = {
 const Formulario = ({ productoAEditar, setProductoAEditar }) => {
   const [form, setForm, handleChange] = useForm(formInicial);
   const { crearProductoContext, actualizarProductoContext } =
-    useContext(ProductoContext);
+    useContext(ProductContext);
 
   const [foto, setFoto] = useState("");
   const [srcImagen, setSrcImagen] = useState("");

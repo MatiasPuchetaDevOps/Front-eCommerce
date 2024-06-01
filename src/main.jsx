@@ -12,12 +12,12 @@ import Contacto from './pages/Contacto'
 import Carrito from './pages/Carrito'
 import Header from './components/Header'
 import Footer from './components/Footer'
-import { ProductoProvider } from './contexts/ProductoContext'
+import { ProductProvider } from './contexts/ProductContext'
 import { CarritoProvider } from './contexts/CarritoContext'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <CarritoProvider> 
-      <ProductoProvider >
+      <ProductProvider >
         <BrowserRouter>
 
           <Header />
@@ -35,6 +35,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Footer />
 
         </BrowserRouter>
-      </ProductoProvider>
+      </ProductProvider>
     </CarritoProvider>
 )

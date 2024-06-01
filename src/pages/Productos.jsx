@@ -1,29 +1,29 @@
 import { useContext } from "react";
 import "./Productos.scss";
-import ProductoContext from "../contexts/ProductoContext";
+import ProductContext from "../contexts/ProductContext";
 import ProductosCard from "../components/ProductosCard";
 
 const Productos = () => {
-  const { productos } = useContext(ProductoContext);
-  let productosTotales;
-  if (productos) {
-    productosTotales = productos.length;
+  const { products } = useContext(ProductContext);
+  let productsTotales;
+  if (products) {
+    productsTotales = products.length;
   }
 
-  console.log(productos)
+  console.log(products)
   
   return (
     <main>
       <section className="section-cards">
         <header className="section-cards__header">
           <h1>COLECCION 2023</h1>
-          <p className="pProductos">
-            {productos
-              ? `Se encontraron ${productosTotales} productos`
-              : `No se encontraron productos`}
+          <p className="pProducts">
+            {products
+              ? `Se encontraron ${productsTotales} products`
+              : `No se encontraron products`}
           </p>
         </header>
-        <main className="container__productos" >{productos && productos.length !== 0 && <ProductosCard productos={productos} />}</main>
+        <main className="container__products" >{products && products.length !== 0 && <ProductosCard products={products} />}</main>
       </section>
     </main>
   );
