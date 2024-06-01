@@ -10,6 +10,8 @@ const Productos = () => {
     productosTotales = productos.length;
   }
 
+  console.log(productos)
+  
   return (
     <main>
       <section className="section-cards">
@@ -21,7 +23,7 @@ const Productos = () => {
               : `No se encontraron productos`}
           </p>
         </header>
-        <main className="container__productos" >{productos && <ProductosCard productos={productos} />}</main>
+        <main className="container__productos" >{productos && productos.length !== 0 && <ProductosCard productos={productos} />}</main>
       </section>
     </main>
   );
