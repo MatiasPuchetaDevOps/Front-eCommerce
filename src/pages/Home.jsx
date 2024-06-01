@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
 import Card from "../components/Card";
 import ProductoContext from "../contexts/ProductoContext";
-import "./Inicio.scss";
+import "./Home.scss";
 
-const Inicio = () => {
+const Home = () => {
   const { productos } = useContext(ProductoContext);
   let novedades;
   let ultimasNovedades;
@@ -14,10 +14,11 @@ const Inicio = () => {
   };
   if (productos) {
     ultimosProductos();
+
   }
   return (
     <>
-      <section className="sectionInicio">
+      <section className="sectionHome">
         <header>
           <img
             className="headerImg"
@@ -46,9 +47,9 @@ const Inicio = () => {
           </div>
           <h2>Ultimas Novedades</h2>
           <div className="seccion__novedades">
-           
+
             {novedades && <Card productos={novedades} />}
-        
+
           </div>
         </main>
       </section>
@@ -56,4 +57,4 @@ const Inicio = () => {
   );
 };
 
-export default Inicio;
+export default Home;

@@ -2,9 +2,9 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
-import './index.scss'
+import './index.css'
 
-import Inicio from './pages/Inicio'
+import Home from './pages/Home'
 import Productos from './pages/Productos'
 import Alta from './pages/Alta'
 import Nosotros from './pages/Nosotros'
@@ -23,13 +23,13 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Header />
 
           <Routes>
-            <Route path="/" element={<Inicio />} />
+            <Route path="/" element={<Home />} />
             <Route path="/alta" element={<Alta />} />
             <Route path="/productos" element={<Productos />} />
             <Route path="/nosotros" element={<Nosotros />} />
             <Route path="/contacto" element={<Contacto />} />
             <Route path="/carrito" element={<Carrito />} />
-            <Route path="*" element={<Inicio />} />
+            <Route path="*" element={<Home />} />
           </Routes>
         
           <Footer />
