@@ -1,4 +1,4 @@
-.container__nosotros {
+b.container__nosotros {
   h1 {
     text-align: center;
     font-size: 3em;
@@ -15,6 +15,15 @@
     margin: 2em auto;
     padding: 1em 0;
   }
+}
+
+.manzana{
+  width: 100%;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .right {

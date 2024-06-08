@@ -4,14 +4,16 @@ import Navbar from "./Navbar";
     return (
       <div className="main-header flex flex-col w-full font-kalam md:flex-col-reverse">
         <input type="checkbox" id="menu" className="hidden" />
+
+
   
-        <div className="search-bar flex items-center justify-evenly w-full h-14 bg-header">
-          <div className="search-bar__logo-container flex justify-center items-center w-1/3 ml-8 p-4 bg-header text-white">
+        <div className="search-bar flex items-center justify-evenly w-full h-14 bg-red-500">
+          <div className="search-bar__logo-container flex justify-center items-center w-1/3 ml-8 p-4 text-white">
             <a href="./Inicio">
               <img src="../img/header/logo.jpeg" alt="Logo Demian" className="w-56" />
             </a>
           </div>
-          <form action="#" className="search-bar__form-container flex flex-grow items-center ml-28 p-4 bg-header">
+          <form action="#" className="search-bar__form-container flex flex-grow items-center ml-28 p-4 bg-heade">
             <label htmlFor="busqueda" className="hidden"></label>
             <input
               type="search"

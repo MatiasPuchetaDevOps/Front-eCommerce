@@ -3,7 +3,8 @@ import "./Nosotros.scss";
 
 const Nosotros = () => {
   return (
-    <main className="container__nosotros">
+    <>
+      {/* <div className="container__nosotros">
       <h1>Descubre quienes somos</h1>
 
       <div className="container__nosotros-descripcion left">
@@ -69,7 +70,10 @@ const Nosotros = () => {
           creatividad dan vida a cada colección.
         </p>
       </div>
-    </main>
+    </div> */}
+
+        <h1 className="w-full bg-green-500 flex h-20 justify-center items-center">Productos</h1>
+    </>
   );
 };
 
